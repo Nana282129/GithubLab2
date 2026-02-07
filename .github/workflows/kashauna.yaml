@@ -17,8 +17,11 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Run Python file
-        run: python main.py
+       - name: Run Python file
+        run: |
+          ls
+          python main.py
+
 
       - name: List files
         run: ls -la
